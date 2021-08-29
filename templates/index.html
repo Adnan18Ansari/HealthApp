@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- <h2>Image Classifier</h2> -->
+
+
+    <form id="upload-file" method="post" enctype="multipart/form-data" style="color: rgb(231, 80, 80); margin-left: 40%;">
+        <label for="imageUpload" class="upload-label" >
+            Upload
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg"
+            >
+    </form>
+
+    <!-- <div class="image-section" style="display:none;"> -->
+    <div class="img-preview image-section" style="margin-left: 30%;">
+            <div id="imagePreview">
+            </div>
+    </div>
+    <div  class="container" style="margin-left: 10%;" id="btnpred">
+        <button type="button" class="btn btn-danger btn-lg " id="btn-predict" style="margin-left: 30%; margin-top: 5%;">Predict</button>
+    </div> 
+    
+    
+
+    <!-- <div class="loader" style="display:none;"></div> -->
+
+    <!-- <h3 
+        <span> </span>
+    </h3> -->
+
+
+
+{% endblock %}
