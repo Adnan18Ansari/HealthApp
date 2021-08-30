@@ -14,7 +14,7 @@ import re
 
 
 from flask import send_from_directory
-# import tensorflow as tf
+import tensorflow as tf
 
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
