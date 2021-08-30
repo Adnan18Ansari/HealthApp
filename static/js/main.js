@@ -52,7 +52,7 @@ $(document).ready(function () {
                 $('#intro').hide();
                 $('#imgmal').hide();
                 $('#rescont').show();
-                $('#result').fadeIn(600);
+                $('#result').fadeIn(10);
                 $('#result').text(data);
                 console.log('Success!');
             },
