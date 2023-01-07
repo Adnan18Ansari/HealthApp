@@ -32,14 +32,10 @@ def model_predict(img_path, model):
 
     # Preprocessing the image
     x = image.img_to_array(img)
-    # x = np.true_divide(x, 255)
     ## Scaling
     x=x/255
     x = np.expand_dims(x, axis=0)
    
-
-    # Be careful how your trained model deals with the input
-    # otherwise, it won't make correct prediction!
     x = preprocess_input(x)
 
     preds = model.predict(x)
@@ -48,7 +44,6 @@ def model_predict(img_path, model):
         preds="Sorry you have high chances of getting the disease. Please consult the doctor immediately"
     else:
         preds="No need to fear. You have no dangerous symptoms of the disease."
-    
     
     return preds
 
